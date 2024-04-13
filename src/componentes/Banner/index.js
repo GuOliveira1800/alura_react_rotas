@@ -1,32 +1,33 @@
-import styles from './banner.module.css';
-import imgBanner from 'assets/banner.jpeg';
-import imgBat3 from 'assets/joker.jpeg';
+import styles from './Banner.module.css';
+import circuloColorido from 'assets/circulo_colorido.png';
+import minhaFoto from 'assets/minha_foto.png'
 
-export default function Banner (){
+export default function Banner() {
     return (
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
-                <h1>
-                    Batman
+                <h1 className={styles.titulo}>
+                    Olá, Mundo!
                 </h1>
+
                 <p className={styles.paragrafo}>
-                    Porque ele é o herói que Gotham merece, mas não o que ela precisa agora. Vamos caçá-lo...porque ele aguenta. Porque ele não é um herói. É um guardião silencioso... um protetor zeloso. Um Cavaleiro das Trevas.
+                    Boas vindas ao meu espaço pessoal! Eu sou Antônio Evaldo, instrutor de Front-end da Alura. Aqui compartilho vários conhecimentos, espero que aprenda algo novo :)
                 </p>
             </div>
+
             <div className={styles.imagens}>
                 <img
                     className={styles.circuloColorido}
-                    src={imgBanner}
+                    src={circuloColorido}
                     aria-hidden={true}
-                    alt=''
                 />
+
                 <img
                     className={styles.minhaFoto}
-                    src={imgBat3}
-                    aria-hidden={true}
-                    alt='Foto batman'
+                    src={minhaFoto}
+                    alt="Foto do Antônio Evaldo sorrindo"
                 />
             </div>
         </div>
-    );
+    )
 }
